@@ -1,3 +1,10 @@
+
+var serverJS = require("../../server.js")
+var express = require("express");
+
+
+var app = express();
+
 //displays friends
 app.get("/api/friends", function (req, res) {
     return res.json(friends);
