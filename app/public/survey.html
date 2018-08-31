@@ -5,26 +5,39 @@
     <meta charset="utf-8" />
     <title>Friend Finder</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- JQuery -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+        <!-- google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky|Roboto+Slab" rel="stylesheet">
     <!-- Chosen -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-    <script src "https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+    <script src 
+    "https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+     <!-- CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
 
 <body>
 
-    <div class="jumbotron">
+    <div class="jumbotron" style="color: gold;
+    background: hotpink;
+    font-family: 'Fontdiner Swanky', cursive;">
         <h1 class="display-4 text-center">
-            <i class="fas fa-clipboard-list"></i> Survey Questions </h1>
-        <p class="lead text-center">Fill out your information and answer the questions below to by matched with a friend.</p>
+            <i class="far fa-star" style="color: gold;"></i>
+            Disney Princess Match
+            <i class="far fa-star" style="color: gold;"></i>
+
+        </h1>
+        <p style="color: gold;" class="lead text-center">Fill out your information and answer the questions below to be matched with a disney princess.</p>
         <hr class="my-4">
     </div>
     <!-- user information -->
@@ -48,7 +61,7 @@
                     <h3>
                         <strong>Question 1</strong>
                     </h3>
-                    <h4>Question Goes here</h4>
+                    <h4 class="quest">Do you want to be where the people are?</h4>
                     <select class="chosen-select" id="q1">
                         <option value ""></option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -63,7 +76,7 @@
                     <h3>
                         <strong>Question 2</strong>
                     </h3>
-                    <h4>Question Goes here</h4>
+                    <h4 class="quest">Would you ever turn down an apple?</h4>
                     <select class="chosen-select" id="q2">
                         <option value ""></option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -78,7 +91,7 @@
                     <h3>
                         <strong>Question 3</strong>
                     </h3>
-                    <h4>Question Goes here</h4>
+                    <h4 class="quest">Do you work well with evil step sisters?</h4>
                     <select class="chosen-select" id="q3">
                         <option value ""></option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -93,7 +106,7 @@
                     <h3>
                         <strong>Question 4</strong>
                     </h3>
-                    <h4>Question Goes here</h4>
+                    <h4 class="quest">How important is bringing honor to your family?</h4>
                     <select class="chosen-select" id="q4">
                         <option value ""></option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -108,7 +121,7 @@
                     <h3>
                         <strong>Question 5</strong>
                     </h3>
-                    <h4>Question Goes here</h4>
+                    <h4 class="quest">Do you scare easily, specifically by beasts?</h4>
                     <select class="chosen-select" id="q5">
                         <option value ""></option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -123,7 +136,7 @@
                     <h3>
                         <strong>Question 6</strong>
                     </h3>
-                    <h4>Question Goes here</h4>
+                    <h4 class="quest">Do you prefer to travel via carpet?</h4>
                     <select class="chosen-select" id="q6">
                         <option value ""></option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -138,7 +151,7 @@
                     <h3>
                         <strong>Question 7</strong>
                     </h3>
-                    <h4>Question Goes here</h4>
+                    <h4 class="quest">Do you prefer to wake up from a kiss?</h4>
                     <select class="chosen-select" id="q7">
                         <option value ""></option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -153,7 +166,7 @@
                     <h3>
                         <strong>Question 8</strong>
                     </h3>
-                    <h4>Question Goes here</h4>
+                    <h4 class="quest">How do you feel about roomates (like 7, elderly, male roommates)?</h4>
                     <select class="chosen-select" id="q8">
                         <option value ""></option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -168,7 +181,7 @@
                     <h3>
                         <strong>Question 9</strong>
                     </h3>
-                    <h4>Question Goes here</h4>
+                    <h4 class="quest">How likely are you to seek advice from a talking tree?</h4>
                     <select class="chosen-select" id="q9">
                         <option value ""></option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -183,7 +196,7 @@
                     <h3>
                         <strong>Question 10</strong>
                     </h3>
-                    <h4>Question Goes here</h4>
+                    <h4 class="quest">Does the cold bother you?</h4>
                     <select class="chosen-select" id="q10">
                         <option value ""></option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -194,90 +207,92 @@
                     </select>
                     <br>
                     <br>
-                    <button id="submit-btn" type="submit" class="btn btn-success">
+                    <button id="submit-btn" style="background-color: gold; border-color:gold;" type="submit" class="btn btn-success">
                         <i class="fas fa-check"></i> Submit</button>
                 </form>
             </div>
         </div>
 
-        <div id="results-modal" class="modal fade" tabindex="-1" role="dialog" style="display: none">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
+        <div class="modal fade" id="results-modal" tabindex="-1" role="dialog" aria-labelledby="results-modal" style="display: none;"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
                     <div class="modal-header">
-                      <h2 class="modal-title">Best Match</h2>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
+                        <h2 class="modal-title text-center">
+                            <stong>Best Match</stong>
+                        </h2>
                     </div>
                     <div class="modal-body">
-                      <h2 id="match-name">Match goes here.</h2>
-                      <img id="match-img" src="" alt>
+                        <h2 id="match-name" class="text-center">Match goes here.</h2>
+                        <img id="match-img" src="https://via.placeholder.com/350x150" alt>
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" style="background-color:hotpink; border-color: hotpink;" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
-                  </div>
                 </div>
-              </div>
+            </div>
+        </div>
 
         <p class="text-center">
             <a href="api/friends">API Friends List</a> |
-            <a href="#">GitHub Repo</a>
+            <a href="https://github.com/Jenniferbazelak/FriendFinder">GitHub Repo</a>
         </p>
 
 
     </div>
+
     <script type="text/javascript">
-//    $("#results-modal").modal("hide");
+
+
+        $(document).ready(function () {
+
+
+            $("#submit-btn").on("click", function (event) {
+                event.preventDefault();
+
+                var newUser = {
+                    name: $("#name-input").val().trim(),
+                    photo: $("#photo").val(),
+                    scores: [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val()]
+
+                };
+
+
+                $("#name-input").val("");
+                $("#photo").val("");
+                $("#q1").val("");
+                $("#q2").val("");
+                $("#q3").val("");
+                $("#q4").val("");
+                $("#q5").val("");
+                $("#q6").val("");
+                $("#q7").val("");
+                $("#q8").val("");
+                $("#q9").val("");
+                $("#q10").val("");
 
 
 
-$("#submit-btn").on("click", function(event) {
-  event.preventDefault();
-    
-  var newUser = {
-    name: $("#name-input").val().trim(),
-    photo: $("#photo").val(),
-    scores: [
-        $("#q1").val(),
-        $("#q2").val(),
-        $("#q3").val(),
-        $("#q4").val(),
-        $("#q5").val(),
-        $("#q6").val(),
-        $("#q7").val(),
-        $("#q8").val(),
-        $("#q9").val(),
-        $("#q10").val()]
-    
-  };
+                $.post("/api/friends", newUser)
+                    .then(function (data) {
+                        $("#match-name").text(data.name);
+                        $("#match-img").attr("src", data.photo);
+                        $("#results-modal").modal("toggle");
+                    });
 
+            });
+        });
 
-  $("#name-input").val(""); 
-  $("#photo").val("");
-  $("#q1").val("");
-  $("#q2").val("");
-  $("#q3").val("");
-  $("#q4").val("");
-  $("#q5").val("");
-  $("#q6").val("");
-  $("#q7").val("");
-  $("#q8").val("");
-  $("#q9").val("");
-  $("#q10").val("");
-
-
-
-  $.post("/api/friends", newUser)
-    .then(function(data) {
-        console.log("ASDFASDFASDF");
-        $("#match-name").text(data.name);
-        $("#match-img").attr("src", data.photo);
-      
-    });
-
-});
-    
     </script>
 </body>
 

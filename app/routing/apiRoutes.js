@@ -1,26 +1,37 @@
 
-var serverJS = require("../../server.js")
-var express = require("express");
+var friends = require('../data/friends');
 
 
-var app = express();
 
+function apiRoutes(app) {
 //displays friends
 app.get("/api/friends", function (req, res) {
     return res.json(friends);
 });
 
 
-//Create New Friend
 app.post("/api/friends", function (req, res) {
-
+    var diffArray = [];
+    console.log("message received");
     var newUser = req.body;
+    
+    for (var i = 0; i < friends.length; i++) {
+        var scoreDiff= 0;
+        for (var j = 0; j < friends[i].scores.length; j++) {
+                scoreDiff+= Math.abs(friends[i].scores[j] - newUser.scores[j])
+                
+        }
+        diffArray.push(scoreDiff);
+    }
+    var matchIndex = diffArray.indexOf(Math.min(...diffArray));
+   
 
-    console.log(newUser);
+    var match= friends[matchIndex];
+    console.log(match);
 
+    res.json(match)
     friends.push(newUser);
-
-    //this is where the math goes but can not push to browser so have to send t or f
-
-
 });
+};
+
+module.exports = apiRoutes;

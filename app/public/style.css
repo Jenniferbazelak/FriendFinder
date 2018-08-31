@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box ;
+    margin: 0;
+    padding: 0;
+  font-family: 'Fontdiner Swanky', cursive;
+  color:hotpink;
+}
+
+.quest{
+color: black;
+font-family: 'Roboto Slab', serif;
+}
+
+#princess{
+  height: 213px;
+    width: 319px;
+    position: relative;
+    left: 473px;
+}
+
+#match-img{
+  text-align:center;
+  width:200px;
+  height: 100%;
+  margin-left: 25%;
+  margin-right: 20%;
+}
+
+a{
+  text-decoration: none;
+  color:hotpink;
+}
+
+#modal-title{
+  text-align:center;
+}
