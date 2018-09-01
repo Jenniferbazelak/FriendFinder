@@ -34,3 +34,38 @@ a{
 #modal-title{
   text-align:center;
 }
+
+@media screen and (max-width: 980px) {
+  #princess{
+    position: relative;
+    left: 633px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+
+  #princess{
+      position: relative;
+      left: 473px;
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+  #princess{
+    position: relative;
+    left: 337px;
+}
+
+}
+
+@media screen and (max-width: 640px) {
+
+  #princess{
+    position: relative;
+    left: 337px;
+}
+
+}
