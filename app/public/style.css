@@ -35,18 +35,18 @@ a{
   text-align:center;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1050px) {
   #princess{
     position: relative;
     left: 633px;
   }
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 900px) {
 
   #princess{
       position: relative;
-      left: 473px;
+      left: 517px;
   }
 
 
@@ -61,11 +61,11 @@ a{
 
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 667px) {
 
   #princess{
     position: relative;
-    left: 337px;
+    left: 37px;
 }
 
 }
