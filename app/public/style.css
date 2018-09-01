@@ -14,8 +14,7 @@ font-family: 'Roboto Slab', serif;
 #princess{
   height: 213px;
     width: 319px;
-    position: relative;
-    left: 473px;
+    margin-left:39%;
 }
 
 #match-img{
@@ -35,28 +34,12 @@ a{
   text-align:center;
 }
 
-@media screen and (max-width: 1050px) {
-  #princess{
-    position: relative;
-    left: 633px;
-  }
-}
 
-@media screen and (max-width: 900px) {
-
-  #princess{
-      position: relative;
-      left: 517px;
-  }
-
-
-}
 
 @media screen and (max-width: 768px) {
 
   #princess{
-    position: relative;
-    left: 337px;
+    margin-left: 34%;
 }
 
 }
@@ -64,8 +47,7 @@ a{
 @media screen and (max-width: 667px) {
 
   #princess{
-    position: relative;
-    left: 37px;
+    margin-left: 6%;
 }
 
 }
