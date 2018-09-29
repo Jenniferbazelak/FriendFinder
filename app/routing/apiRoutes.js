@@ -30,7 +30,7 @@ app.post("/api/friends", function (req, res) {
     console.log(match);
 
     res.json(match)
-    friends.push(newUser);
+    //friends.push(newUser);
 });
 };
 
